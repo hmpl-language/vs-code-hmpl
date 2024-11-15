@@ -4,7 +4,7 @@
   "description": "Official HMPL language support for VS Code",
   "version": "0.0.1",
   "author": "Anthony Max",
-  "publisher": "Anthony Max",
+  "publisher": "anthonymax",
   "engines": {
     "vscode": "^1.95.0"
   },
