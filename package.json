@@ -1,0 +1,41 @@
+{
+  "name": "hmpl",
+  "displayName": "HMPL",
+  "description": "Official HMPL language support for VS Code",
+  "version": "0.0.1",
+  "author": "Anthony Max",
+  "publisher": "Anthony Max",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hmpl-language/vs-code-hmpl"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "icon": "images/logo.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "hmpl",
+        "aliases": [
+          "HMPL",
+          "hmpl"
+        ],
+        "extensions": [
+          ".hmpl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "hmpl",
+        "scopeName": "source.hmpl",
+        "path": "./syntaxes/hmpl.tmLanguage.json"
+      }
+    ]
+  }
+}
