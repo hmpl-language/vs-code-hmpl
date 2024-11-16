@@ -3,8 +3,8 @@
   "displayName": "HMPL",
   "description": "Official HMPL language support for VS Code",
   "version": "0.0.1",
-  "author": "Anthony Max",
-  "publisher": "anthonymax",
+  "author": "HMPL.js",
+  "publisher": "hmpljs",
   "engines": {
     "vscode": "^1.95.0"
   },
