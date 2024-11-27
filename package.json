@@ -2,7 +2,7 @@
   "name": "hmpl",
   "displayName": "HMPL",
   "description": "Official HMPL language support for VS Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "HMPL.js",
   "publisher": "hmpljs",
   "engines": {
