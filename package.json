@@ -40,7 +40,7 @@
     "iconThemes": [
       {
         "id": "hmpl-icons",
-        "label": "HMPL File Icons",
+        "label": "HMPL Icons",
         "path": "./file-icons.json"
       }
     ]
