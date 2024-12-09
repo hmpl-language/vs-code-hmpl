@@ -2,7 +2,7 @@
   "name": "hmpl",
   "displayName": "HMPL",
   "description": "Official HMPL language support for VS Code",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "HMPL.js",
   "publisher": "hmpljs",
   "engines": {
@@ -33,8 +33,8 @@
     "grammars": [
       {
         "language": "hmpl",
-        "scopeName": "source.hmpl",
-        "path": "./syntaxes/hmpl.tmLanguage.json"
+        "scopeName": "text.html.basic",
+        "path": "./syntaxes/html.tmLanguage.json"
       }
     ]
   }
