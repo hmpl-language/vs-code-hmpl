@@ -36,6 +36,13 @@
         "scopeName": "text.html.basic",
         "path": "./syntaxes/html.tmLanguage.json"
       }
+    ],
+    "iconThemes": [
+      {
+        "id": "hmpl-icons",
+        "label": "HMPL File Icons",
+        "path": "./file-icons.json"
+      }
     ]
   }
 }
