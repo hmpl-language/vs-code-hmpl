@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.4 (2025-05-11)
+
+- Adding highlighting of the new syntax of version 3
+
 ## 0.0.3 (2024-12-09)
 
 - HTML markup is now highlighted in any topic when working with HMPL

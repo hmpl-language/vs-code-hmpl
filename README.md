@@ -6,7 +6,7 @@ HMPL syntax support in the VS Code code editor.
 
 ```html
 <div>
-  {{ src: "/api/getHTML" }}
+  <div>{{#request src="/api/getHTML"}} {{/request}}</div>
 </div>
 ```
 
