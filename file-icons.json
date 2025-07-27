@@ -1,13 +1,13 @@
 {
   "iconDefinitions": {
-    "customfile-icon": {
+    "hmpl": {
       "iconPath": "./images/hmpl.svg"
     }
   },
   "fileExtensions": {
-    "hmpl": "customfile-icon"
+    "hmpl": "hmpl"
   },
   "languageIds": {
-    "hmpl": "customfile-icon"
+    "hmpl": "hmpl"
   }
 }

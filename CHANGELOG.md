@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.0.5 (2025-07-27)
+
+- Fixed syntax highlighting for nested indicator blocks in HMPL templates
+- Resolved circular dependency issues in TextMate grammar
+- Improved parsing of complex nested structures like `indicators=[{trigger: "...", content: "..."}]`
+- Enhanced support for multi-line indicator configurations
+- Fixed file icon display for .hmpl files in VS Code
+- Improved icon theme configuration for better visibility
+
 ## 0.0.4 (2025-05-11)
 
 - Adding highlighting of the new syntax of version 3
