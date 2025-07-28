@@ -140,29 +140,48 @@
           "endCaptures": { "0": { "name": "punctuation.definition.array.end.hmpl" } },
           "name": "meta.array.hmpl",
           "patterns": [
-            {
-              "begin": "\\{",
-              "beginCaptures": { "0": { "name": "punctuation.definition.object.begin.hmpl" } },
-              "end": "\\}",
-              "endCaptures": { "0": { "name": "punctuation.definition.object.end.hmpl" } },
-              "name": "meta.object.hmpl",
-              "patterns": [
-                {
-                  "match": "\\b(trigger|content)\\b\\s*(:)",
-                  "captures": {
-                    "1": { "name": "variable.parameter.hmpl" },
-                    "2": { "name": "punctuation.separator.key-value.hmpl" }
-                  }
-                },
-                { "include": "#hmpl-attribute-value" },
-                { "match": ",", "name": "punctuation.separator.object.hmpl" },
-                { "match": ";", "name": "punctuation.terminator.statement.hmpl"}
-              ]
-            },
-            { "include": "#hmpl-attribute-value" },
+            { "include": "#hmpl-indicator-object" },
             { "match": ",", "name": "punctuation.separator.array.hmpl" }
           ]
         }
+      ]
+    },
+    "hmpl-indicator-object": {
+      "begin": "\\{",
+      "beginCaptures": { "0": { "name": "punctuation.definition.object.begin.hmpl" } },
+      "end": "\\}",
+      "endCaptures": { "0": { "name": "punctuation.definition.object.end.hmpl" } },
+      "name": "meta.object.hmpl",
+      "patterns": [
+        {
+          "match": "\\b(trigger|content)\\b\\s*(:)",
+          "captures": {
+            "1": { "name": "variable.parameter.hmpl" },
+            "2": { "name": "punctuation.separator.key-value.hmpl" }
+          }
+        },
+        {
+          "begin": "\"",
+          "beginCaptures": { "0": { "name": "punctuation.definition.string.begin.hmpl" } },
+          "end": "\"",
+          "endCaptures": { "0": { "name": "punctuation.definition.string.end.hmpl" } },
+          "name": "string.quoted.double.hmpl",
+          "patterns": [
+            { "include": "#entities" }
+          ]
+        },
+        {
+          "begin": "'",
+          "beginCaptures": { "0": { "name": "punctuation.definition.string.begin.hmpl" } },
+          "end": "'",
+          "endCaptures": { "0": { "name": "punctuation.definition.string.end.hmpl" } },
+          "name": "string.quoted.single.hmpl",
+           "patterns": [
+            { "include": "#entities" }
+          ]
+        },
+        { "match": ",", "name": "punctuation.separator.object.hmpl" },
+        { "match": ";", "name": "punctuation.terminator.statement.hmpl"}
       ]
     },
     "attribute": {
